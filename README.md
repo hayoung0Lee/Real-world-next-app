@@ -34,3 +34,14 @@ https://github.com/reck1ess/next-realworld-example-app
 * Profile page (URL: /profile/username-here, /profile/username-here?favorite=true)
   * Show basic user info
   * List of articles populated from author's created articles or author's favorited articles
+
+
+## Next 공식 문서
+https://nextjs.org/
+
+## STEP1: Create Next app
+```
+npx create-next-app real-app
+cd real-app
+yarn dev
+```
