@@ -39,17 +39,21 @@ https://github.com/reck1ess/next-realworld-example-app
 ## Next 공식 문서
 https://nextjs.org/
 
-## STEP1: Create Next app
+# 1일차 학습
+제대로 해놓은 코드를 들여다 보는데 예상했던것처럼 쉽지가않다!!
+
+
+### STEP1: Create Next app
 ```
 npx create-next-app real-app
 cd real-app
 yarn dev
 ```
 
-## STEP2: 프로젝트 기본구조 따라하기
+### STEP2: 프로젝트 기본구조 따라하기
 <img src="../Real-world-next-app/assets/1.png">
 
-## STEP3: pages 폴더 보기
+### STEP3: pages 폴더 보기
 [참고](https://github.com/Road-of-CODEr/we-hate-js/blob/master/Front-End/Next.js/basicStructure.md)
 
 * _app.js: 리액트를 커스텀 하는 곳
@@ -80,4 +84,14 @@ yarn dev
     
 ### lib
 - api 폴더: 리소스별? api 콜을 정리해둠
-  
+
+
+# 2일차 학습
+오늘은 또 내가 뭘 모르고 또 배울련지.... 대학원 안가도 되겠다... 개발자는 학위안나오는 종신형 석박과정....
+
+### React Hooks
+리액트의 훅스에 대해서 제대로 정리를 해본다. lib에서 customhooks를 쓰고 있던데, 실제로 사용해본적이 없어서 보려고 한다. [공식문서](https://reactjs.org/docs/hooks-intro.html) 
+
+[내 블로그](https://mytutorials.tistory.com/187)
+
+오늘은 하다보니까 훅스만 보게됬다!

@@ -12,18 +12,12 @@ const PublishArticleEditor = () => {
   
     const [isLoading, setLoading] = React.useState(false);
     const [errors, setErrors] = React.useState([]);
-    // const [posting, dispatch] = React.useReducer(editorReducer, initialState);
-    // const { data: currentUser } = useSWR("user", storage);
-  
-    // const handleTitle = (e) =>
-    //   dispatch({ type: "SET_TITLE", text: e.target.value });
-    // const handleDescription = (e) =>
-    //   dispatch({ type: "SET_DESCRIPTION", text: e.target.value });
-    // const handleBody = (e) =>
-    //   dispatch({ type: "SET_BODY", text: e.target.value });
-    // const addTag = (tag) => dispatch({ type: "ADD_TAG", tag: tag });
-    // const removeTag = (tag) => dispatch({ type: "REMOVE_TAG", tag: tag });
-  
+
+    console.log("useState", React.useState);
+
+    console.log("dispatcher", React.useState([]));
+
+
     const handleSubmit = async (e) => {
       e.preventDefault();
       setLoading(true);
