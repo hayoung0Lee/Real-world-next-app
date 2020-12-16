@@ -45,3 +45,39 @@ npx create-next-app real-app
 cd real-app
 yarn dev
 ```
+
+## STEP2: 프로젝트 기본구조 따라하기
+<img src="../Real-world-next-app/assets/1.png">
+
+## STEP3: pages 폴더 보기
+[참고](https://github.com/Road-of-CODEr/we-hate-js/blob/master/Front-End/Next.js/basicStructure.md)
+
+* _app.js: 리액트를 커스텀 하는 곳
+
+<img src="../Real-world-next-app/assets/2.png">
+<img src="../Real-world-next-app/assets/3.png">
+
+이렇게 두 컴포넌트가 있다치면 __app.js가 최상단 컴포넌트인 것을 console.log를 찍어보면 알 수 있다. 
+
+<img src="../Real-world-next-app/assets/4.png">
+
+그래서 global css같은걸 입힐땐 _app.js에서 처리하면 된다. 
+
+화면을 먼저 정의하고 각 페이지의 url에 따라서 페이지 구성을 먼저함. 각 페이지내의 컴포넌트는 컴포넌트 폴더안에 있음
+
+* page에서 data fetching:
+  * <img src="../Real-world-next-app/assets/5.png">
+    이 코드를 보자. 
+    path에 param으로 미리 빌드할 pid를 주지 않으면 먼저 빌드를 해놓지 않는데, pid를 주면 static하게 빌드시에 미리 generation한다. 
+  * <img src="../Real-world-next-app/assets/6.png">
+  * <img src="../Real-world-next-app/assets/7.png">
+    [참고자료](https://github.com/Road-of-CODEr/we-hate-js/blob/master/Front-End/Next.js/basicFeatures/dataFetching/getStaticPaths.md)
+
+  * lib/api로 정리해도 기존처럼 axios post하는 부분은 클라이언트에서 처리한다. 
+    * <img src="../Real-world-next-app/assets/10.png">
+    * <img src="../Real-world-next-app/assets/8.png">
+    * <img src="../Real-world-next-app/assets/9.png">
+    
+### lib
+- api 폴더: 리소스별? api 콜을 정리해둠
+  
