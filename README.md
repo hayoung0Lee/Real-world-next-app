@@ -47,7 +47,7 @@ https://nextjs.org/
 ```
 npx create-next-app real-app
 cd real-app
-yarn dev
+npm run dev
 ```
 
 ### STEP2: 프로젝트 기본구조 따라하기
@@ -148,3 +148,16 @@ yarn dev
     <img src="./assets/14.png">
 
     - 페이지 요청 -> pages의 각 컴포넌트내에서 datafetching 요소가 있으면 처리하고, 없으면 빈객체 -> 이 값을 _app.js에서 pageprops로 요청한 page 컴포넌트에 넘겨준다 -> _document.js에서 해당하는 doucment요소를 감싸서 응답해준다. 
+
+
+2. Pages, Components, lib 파일 채우기
+   - [context 관련 읽은 글](https://ideveloper2.tistory.com/136)
+   - [hooks vs context api](https://www.sitepoint.com/replace-redux-react-hooks-context-api/#:~:text=React%20hooks%20allow%20you%20to,share%20state%20with%20other%20components.)
+      ```
+     React hooks allow you to use local state inside function components, while the Context API allows you to share state with other components.
+     ```
+
+   - 전체적인 폴더/ 파일을 생성하는 것을 따라하며 느낀점:
+     - 이렇게 폴더구조를 처음에 만드는 사람들은 어떻게 이렇게 만들수 있었던걸까...? 짬밥....? 폴더만 만들었는데도, 이때까지 프로젝트하면서 불편하고 반복적으로 처리했던 일들이 많이 정리가 되는 것 같다. 이렇게 구조를 만들고보니, 왜 컴포넌트 기반구조가 인기많은지 이제야알 것 같다. 그리고 초기에 프로젝트 구조를 잘 잡는것이 얼마나 중요한 일인지도 알겠다.  
+      
+   
