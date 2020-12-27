@@ -1,5 +1,7 @@
 import Head from "next/head";
 import '../styles.css'
+import Layout from "../components/common/Layout";
+import ContextProvider from "../lib/context";
 
 function MyApp({ Component, pageProps }) {
   console.log("app", Component, pageProps )
@@ -10,7 +12,11 @@ function MyApp({ Component, pageProps }) {
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
     </Head>
-    <Component {...pageProps} />
+    <ContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ContextProvider>
     </>
 }
 

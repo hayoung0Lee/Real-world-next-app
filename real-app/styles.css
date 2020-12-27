@@ -743,3 +743,16 @@
       font-size: 15px;
     }
   }
+
+  /* temp */
+.layout-temp {
+  background-color: grey;
+  width: 100%;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.main-temp {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

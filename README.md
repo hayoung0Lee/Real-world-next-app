@@ -160,5 +160,23 @@ npm run dev
 
    - 전체적인 폴더/ 파일을 생성하는 것을 따라하며 느낀점:
      - 이렇게 폴더구조를 처음에 만드는 사람들은 어떻게 이렇게 만들수 있었던걸까...? 짬밥....? 폴더만 만들었는데도, 이때까지 프로젝트하면서 불편하고 반복적으로 처리했던 일들이 많이 정리가 되는 것 같다. 이렇게 구조를 만들고보니, 왜 컴포넌트 기반구조가 인기많은지 이제야알 것 같다. 그리고 초기에 프로젝트 구조를 잘 잡는것이 얼마나 중요한 일인지도 알겠다.  
-      
+
+3. `_app_.js`의 구조 파악하기
+   - components/common/Layout 컴포넌트로 Layout처리
+     - 여기서 nav, footer를 지정한다.  
+   - ContextProvider로 Context관련 처리: 
+     - [createContext](https://reactjs.org/docs/context.html#reactcreatecontext)
+       - 공식문서봐도 잘모르겠어서 찾아본 [블로그 글!](https://velog.io/@kwonh/React-Context-API-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-React.createContext)
+       - 모든 컨텍스트 객체는 Provider React 컴포넌트를 제공한다. 
+       - 생긴모양: `<MyContext.Provider value={/* some value */}>`
+       - 프로바이더 컴포넌트는 value값을 children 컴포넌트에 넘겨주고, 모든 하위 컴포넌트는 프로바이더의 value 프롭에서 변경사항이 있으면 re-render된다. 
+     - [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
+     - context 폴더의 역할: 페이징 관련해서 page offset을 체크하는 역할
+
+
+## 4일차에 해야할 것
+- pagination 처리로직 파악하기, 브라우저에서 동작하는 코드와 서버에서 동작하는 코드 파악해보기
+
+## 참고자료
+- [What is the !! (not not) operator in JavaScript?](https://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript)
    
