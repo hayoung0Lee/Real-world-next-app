@@ -141,10 +141,11 @@ npm run dev
 
         그러면 이제 내가 추가한 메타 태그가 포함이 되서 보였다. 그외에도 기초적인 것들은 포함을 시켜주는 것 같긴하다. 
 
-    - _app.js -> page 컴포넌트(index.js, artice/[pid].js) -> _document.js 순으로 접근
+    - `_app.js` -> page 컴포넌트(index.js, artice/[pid].js) -> _document.js 순으로 접근
   
   
   - 현재 파악한 흐름
+  
     <img src="./assets/14.png">
 
     - 페이지 요청 -> pages의 각 컴포넌트내에서 datafetching 요소가 있으면 처리하고, 없으면 빈객체 -> 이 값을 _app.js에서 pageprops로 요청한 page 컴포넌트에 넘겨준다 -> _document.js에서 해당하는 doucment요소를 감싸서 응답해준다. 
