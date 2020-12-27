@@ -44,8 +44,8 @@ export async function getStaticProps({ params }) {
 
 const ArticlePage = ({ article, pid }) => {
     // if (!article) return <LoadingSpinner />;
-    axios.get(`${SERVER_BASE_URL}/articles/${encodeURIComponent(pid)}`).then(() => console.log("Hello"));
-    
+    axios.get(`${SERVER_BASE_URL}/articles/${encodeURIComponent(pid)}`).then(() => console.log("axios call"));
+    console.log("article")
     return <div>article page</div>
 };
 export default ArticlePage;

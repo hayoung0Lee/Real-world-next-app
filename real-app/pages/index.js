@@ -75,10 +75,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>My page title</title>
-        <meta property="og:title" content="My page title" key="title" />
-      </Head>
-      <Head>
+        <title>Real App Copy!!</title>
         <meta property="og:title" content="My new title" key="title" />
         <meta property="og:image" content="https://image.shutterstock.com/image-vector/sample-stamp-grunge-texture-vector-260nw-1389188327.jpg" />
         <meta property="og:description" content="Og tag test!!!" />

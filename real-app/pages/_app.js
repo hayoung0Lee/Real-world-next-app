@@ -2,6 +2,7 @@ import Head from "next/head";
 import '../styles.css'
 
 function MyApp({ Component, pageProps }) {
+  console.log("app", Component, pageProps )
   return <>
     <Head>
       <meta
