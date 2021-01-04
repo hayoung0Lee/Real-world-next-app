@@ -176,6 +176,18 @@ npm run dev
 
 ## 4일차에 해야할 것
 - pagination 처리로직 파악하기, 브라우저에서 동작하는 코드와 서버에서 동작하는 코드 파악해보기
+- common/Navbar 관련 처리: 
+  - swr: https://swr.vercel.app/
+  ```
+  npm install swr
+  ```
+
+  - navbar, footer 정의하고 pages를 정의하고, api 폴더에서 사용하는 리소스에 대한 api를 정의해야한다. 
+  - nav관련 link같은건 중복해서 쓰이니까 공용으로 쓸수있도록 하면 좋은것 같다. 
+  - useSWR과 axios를 적절히 섞어 쓰고있는다. API의 경우 확실히관련된 리소스끼리 한 객체로묶에서 관리하는 것이 좋을 것 같다. 
+  <img src="assets/15.png">
+
+  - 네비게이션 잘잡고, page 구분 잘하기!! 
 
 ## 참고자료
 - [What is the !! (not not) operator in JavaScript?](https://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript)
