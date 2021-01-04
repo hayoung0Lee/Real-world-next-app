@@ -93,7 +93,7 @@ export default function Home() {
           </ContentContainer>
           <SidebarContainer>
             <SidebarPresenter>
-              <SidebarTitle>Popular Tags</SidebarTitle>
+              {/* <SidebarTitle>Popular Tags</SidebarTitle> */}
               {/* <Tags /> */}
             </SidebarPresenter>
           </SidebarContainer>
