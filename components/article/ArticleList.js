@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useMemo } from "react";
 import useSWR from "swr";
 // import ArticlePreview from "../../components/article/ArticlePreview";
-import Pagination from "../../components/common/Pagination";
+import Pagination from "../common/Pagination";
 
 import Maybe from "../common/Maybe";
 import { SERVER_BASE_URL, DEFAULT_LIMIT } from "../../lib/utils/constant";
