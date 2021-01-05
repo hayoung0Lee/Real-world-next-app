@@ -189,6 +189,31 @@ npm run dev
 
   - 네비게이션 잘잡고, page 구분 잘하기!! 
 
+## 5일차 볼것
+- pagination: https://swr.vercel.app/docs/pagination
+- 구조를 보고 배껴서 +  복붙도 해서 만들어낸것. 
+<img src="assets/16.png">
+
+- pagination을 아래처럼 page를 핸들링하는 컴포넌트로 구성할 수 있다는 것을 알았다!! 신기한것 같다. 
+
+  ```
+    <Maybe test={articlesCount && articlesCount > 20}>
+      {/*  버튼 생기는 곳!!! */}
+      <Pagination
+          total={pageCount}
+          limit={20}
+          pageCount={10}
+          currentPage={page}
+          lastIndex={lastIndex}
+          fetchURL={fetchURL}
+      />
+    </Maybe>
+  ```
+## 후기
+Next js를 이렇게 쓰는구나를 알 수 있었던 시간. Pagination 쪽은 아직 경험이 부족해서 파악이 어려운 점도 많은것 같다. 하지만 이렇게 구조를 잡으면 나중에 관리하기가 편하긴 할것 같다. 좋은 프로젝트를 보면서 느낀게, 확실히 재사용 되는건 분리해놔야하는구나... 그리고 이렇게 분리해놓으면 편하겠구나이다. Next에 관심이 생겨서 이걸 봤었는데, 결국엔 자바스크립트에 대한 이해, 코드를 분리하는 능력(컴포넌트또한 어쨌든 함수), 그리고 react에 대한 이해가 중요한거구나 다시 깨달을 수 있었던 시간이다! 
+
+다음에 기회가 되면 이런 구조를 보고, 실제로 필요한 블로그를 한번 구성해보려고 한다!
+
 ## 참고자료
 - [What is the !! (not not) operator in JavaScript?](https://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript)
    

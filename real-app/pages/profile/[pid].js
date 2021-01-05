@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import useSWR, { mutate, trigger } from "swr";
 
-// import ArticleList from "../../components/article/ArticleList";
+import ArticleList from "../../components/article/ArticleList";
 // import CustomImage from "../../components/common/CustomImage";
 // import ErrorMessage from "../../components/common/ErrorMessage";
 // import Maybe from "../../components/common/Maybe";
@@ -93,8 +93,8 @@ const Profile = ({ initialProfile }) => {
           <div className="col-xs-12 col-md-10 offset-md-1">
             {/* <div className="articles-toggle">
               <ProfileTab profile={profile} />
-            </div>
-            <ArticleList /> */}
+            </div>*/}
+            <ArticleList /> 
           </div>
         </div>
       </div>

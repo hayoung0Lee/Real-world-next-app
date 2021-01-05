@@ -19,7 +19,7 @@ export const usePageCountState = () => {
     return state;
 }
 
-export const usePagecountDispatch = () => {
+export const usePageCountDispatch = () => {
     const dispatch = React.useContext(PageCountDispatchContext);
     return dispatch;
 }

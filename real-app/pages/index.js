@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styled from "@emotion/styled";
 
-// import ArticleList from "components/article/ArticleList";
+import ArticleList from "../components/article/ArticleList";
 // import Banner from "components/home/Banner";
 // import Tags from "components/home/Tags";
 // import TabList from "components/home/TabList";
@@ -89,7 +89,7 @@ export default function Home() {
             <FeedToggle>
               {/* <TabList /> */}
             </FeedToggle>
-            {/* <ArticleList /> */}
+            <ArticleList />
           </ContentContainer>
           <SidebarContainer>
             <SidebarPresenter>
