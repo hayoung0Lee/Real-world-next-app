@@ -5,41 +5,6 @@ https://github.com/reck1ess/next-realworld-example-app
 ## my clone site
 [netlify url](https://5ff450798c547ce36f38477f--loving-beaver-2a5b62.netlify.app/)
 
-## Api server
-`https://conduit.productionready.io/api` 
-
-- api: https://github.com/gothinkster/realworld/tree/master/api
-
-## Main feature
-
-### General functionality:
-* Authenticate users via JWT (login/register pages + logout button on settings page)
-* CRU* users (sign up & settings page - no deleting required)
-* CRUD Articles
-* CR*D Comments on articles (no updating required)
-* GET and display paginated lists of articles
-* Favorite articles
-* Follow other users
-
-### The general page breakdown
-* Home page (URL: /)
-  * List of tags
-  * List of articles pulled from either Feed, Global, or by Tag
-  * Pagination for list of articles
-* Sign in/Sign up pages (URL: /user/login, /user/register)
-  * Use JWT (store the token in localStorage)
-* Settings page (URL: /user/settings )
-* Editor page to create/edit articles (URL: /editor/new, /editor/article-slug-here)
-* Article page (URL: /article/article-slug-here)
-  * Delete article button (only shown to article's author)
-  * Render markdown from server client side
-  * Comments section at bottom of page
-  * Delete comment button (only shown to comment's author)
-* Profile page (URL: /profile/username-here, /profile/username-here?favorite=true)
-  * Show basic user info
-  * List of articles populated from author's created articles or author's favorited articles
-
-
 ## Next 공식 문서
 https://nextjs.org/
 
@@ -221,3 +186,38 @@ Next js를 이렇게 쓰는구나를 알 수 있었던 시간. Pagination 쪽은
 ## 참고자료
 - [What is the !! (not not) operator in JavaScript?](https://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript)
    
+
+## Api server
+`https://conduit.productionready.io/api` 
+
+- api: https://github.com/gothinkster/realworld/tree/master/api
+
+## Main feature
+
+### General functionality:
+* Authenticate users via JWT (login/register pages + logout button on settings page)
+* CRU* users (sign up & settings page - no deleting required)
+* CRUD Articles
+* CR*D Comments on articles (no updating required)
+* GET and display paginated lists of articles
+* Favorite articles
+* Follow other users
+
+### The general page breakdown
+* Home page (URL: /)
+  * List of tags
+  * List of articles pulled from either Feed, Global, or by Tag
+  * Pagination for list of articles
+* Sign in/Sign up pages (URL: /user/login, /user/register)
+  * Use JWT (store the token in localStorage)
+* Settings page (URL: /user/settings )
+* Editor page to create/edit articles (URL: /editor/new, /editor/article-slug-here)
+* Article page (URL: /article/article-slug-here)
+  * Delete article button (only shown to article's author)
+  * Render markdown from server client side
+  * Comments section at bottom of page
+  * Delete comment button (only shown to comment's author)
+* Profile page (URL: /profile/username-here, /profile/username-here?favorite=true)
+  * Show basic user info
+  * List of articles populated from author's created articles or author's favorited articles
+
